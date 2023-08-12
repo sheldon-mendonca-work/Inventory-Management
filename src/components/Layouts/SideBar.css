@@ -1,0 +1,73 @@
+.sidebarNavList{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+
+.sidebarNavListItem{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+    height: 4rem;
+    padding: 3px 0;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebarNavListItem{
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+.navListContent{
+    border-radius: 10rem;
+    padding: 1rem 3rem 1rem 2rem;
+    margin-right: auto;
+    display: flex;
+    gap: 1.5rem;
+    transition: all 0.2s;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1270px) {
+    .navListContent{
+        margin-right: 0;
+        padding: 1rem 2rem;
+    }
+}
+
+.navListIcon{
+    display: flex;
+    align-items: flex-end;
+}
+
+.navListSvg{
+    height: 2rem;
+    fill: rgb(83, 100, 113);
+}
+
+@media only screen and (max-width: 600px) {
+    .navListSvg{
+        height: 2rem;
+    }
+}
+
+.sidebarNavListItem:hover .navListContent{
+    background-color: rgba(238, 238, 238);
+    color: black;
+}
+
+.sidebarNavLink:link, .sidebarNavLink:visited{
+    color: gray;
+    text-decoration: none;
+}
+
+.sidebarNavLink.active-page{
+    color: white;
+    font-weight: 700;
+}

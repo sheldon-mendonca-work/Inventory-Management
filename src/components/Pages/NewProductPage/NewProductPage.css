@@ -1,0 +1,16 @@
+.newproduct-form{
+    text-align: left;
+}
+
+.newproduct-input{
+    width: 100%;
+    padding: 0.5rem;
+    border-color: #dcdcdc;
+    font-size: inherit;
+}
+
+
+
+.newproduct-item{
+    margin-bottom: 1rem;
+}
