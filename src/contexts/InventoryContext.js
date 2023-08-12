@@ -17,7 +17,7 @@ const initFormData = {
 }
 
 const initInventoryState = {
-    inventory : [],
+    inventory : initInventoryData,
     department: 'all',
     lowStockChecked: false,
     sortBy: 'name'
@@ -64,7 +64,7 @@ export const InventoryProvider = ({children}) => {
         if(localStorage.getItem('inventoryList') === null){
             localStorage.setItem('inventoryList', JSON.stringify(initInventoryData));
         }else{
-            dispatchInventory({type: 'INITIALIZE_INVENTORY', payload: JSON.parse(localStorage.getItem('inventoryList'))})
+            dispatchInventory({type: 'INITIALIZE_INVENTORY', payload: JSON.parse(localStorage.getItem('inventoryList'))});
         }
     }, [])
 
