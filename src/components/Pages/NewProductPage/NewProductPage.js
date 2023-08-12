@@ -82,12 +82,12 @@ const NewProductPage = () => {
 
             <div className='newproduct-item'>
                 <label>Price:</label>
-                <div><input type='number' value={newForm.price} onChange={priceChangeHandler} required={true} className='newproduct-input'/></div>
+                <div><input type='number' min={0} value={newForm.price} onChange={priceChangeHandler} required={true} className='newproduct-input'/></div>
             </div>
 
             <div className='newproduct-item'>
                 <label>Stock:</label>
-                <div><input type='number' value={newForm.stock} onChange={stockChangeHandler} required={true} className='newproduct-input'/></div>
+                <div><input type='number' min={0} value={newForm.stock} onChange={stockChangeHandler} required={true} className='newproduct-input'/></div>
             </div>
 
             <div className='newproduct-item'>
@@ -102,7 +102,7 @@ const NewProductPage = () => {
 
             <div className='newproduct-item'>
                 <label>Delivered:</label>
-                <div><input type='number' defaultValue={'0'} required={true} readOnly={true} className='newproduct-input'/></div>
+                <div><input type='number' min={0} defaultValue={'0'} required={true} readOnly={true} className='newproduct-input'/></div>
             </div>
 
             <div className='newproduct-item'>
