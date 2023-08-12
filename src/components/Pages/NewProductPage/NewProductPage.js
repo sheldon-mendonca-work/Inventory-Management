@@ -56,7 +56,7 @@ const NewProductPage = () => {
 
     return <Layout>
         <h2 className='heading2'>Add new Product</h2>
-        {showError && <div>Select a department</div>}
+        {showError && <div className='newproduct-error'><strong>Error:</strong> Select a department</div>}
         <form onSubmit={formSubmitHandler} className='newproduct-form'>
             <div className='newproduct-item'>
                 <label>Department:</label>
